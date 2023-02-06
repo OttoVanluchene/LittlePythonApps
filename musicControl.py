@@ -8,9 +8,14 @@ def nextSong():
     # Press the next media key to play the next song
     keyboard.send('next track')
 
+def stopMusic():
+    # Press the stop media key to stop the music
+    keyboard.send('stop')
+
 # Register the callback functions to listen for key press events
 keyboard.add_hotkey('ctrl+num_1', playPause)
 keyboard.add_hotkey('ctrl+num_2', nextSong)
+keyboard.add_hotkey('ctrl+num_3', stopMusic)
 
 # Run the event loop to listen for key press events
 keyboard.wait()
