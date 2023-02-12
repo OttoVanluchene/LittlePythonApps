@@ -34,12 +34,12 @@ index = 0
 for item in data:
     # Extract the name and url properties
     name = clean_name(item['name'])
-    url = item['url']
+    url = item['url']  
 
     print(index)
 
     # Create the Markdown template string
-    template = f'#note/bookmark\n# {name}\nURL: {url}'
+    template = f'#note/bookmark\n\nURL: {url}'
 
     # Write the template string to a file in the folder bookmarks
     with open(f'bookmarks/{name}.md', 'w', encoding='utf-8') as file:
