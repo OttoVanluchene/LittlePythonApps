@@ -1,5 +1,6 @@
 # Starts a fullscreen slideshow, 10 sec rotation, random shuffle, esc to close, arrow keys to navigate manually
 # Place the script in directory you want see the slideshow, all pictures will be fetched also from sibfolders.
+# Clicking on a picture will open it in explorer (windows only)
 
 import os
 import random
