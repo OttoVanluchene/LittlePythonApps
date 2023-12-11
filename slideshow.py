@@ -1,3 +1,6 @@
+# Starts a fullscreen slideshow, 10 sec rotation, random shuffle, esc to close, arrow keys to navigate manually
+# Place the script in directory you want see the slideshow, all pictures will be fetched also from sibfolders.
+
 import os
 import random
 from PIL import Image, ImageTk
